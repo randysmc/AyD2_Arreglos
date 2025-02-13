@@ -2,7 +2,7 @@ package org.example;
 
 public class ConvertidorArray {
 
-    public static Object[] arreglo(Object[] arr){
+    public static Object[] convertidorArray(Object[] arr){
         return convertidorArrayRecursivo(arr, new Object[0]);
     }
 
@@ -16,6 +16,10 @@ public class ConvertidorArray {
             }
         }
         return resultado;
+
+        /*
+        El grado de complejidad de este algoritmo recursivo es de O(n^2) dado que esta en un ciclo for
+         */
     }
 
     private static Object[] agregarAlArray(Object[] arr, Object item){
@@ -24,5 +28,8 @@ public class ConvertidorArray {
         nuevoArreglo[arr.length] = item;
         return nuevoArreglo;
     }
+    /*
+    Aquí el grado de complejidad del algoritmo es O(n)
+     */
 }
 
